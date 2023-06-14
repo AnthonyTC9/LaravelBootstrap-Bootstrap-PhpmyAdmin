@@ -19,4 +19,10 @@ Auth::routes();
 
 Route::resource('/proyectos', App\Http\Controllers\ProyectoController::class);
 
+Route::get('layouts',[App\Http\Controllers\FormularioController::class, 'template'])->name('layouts.template');
+
+Route::post('layouts',[App\Http\Controllers\FormularioController::class, 'store'])->name('layouts.store');
+
+Route::post('formulario',[App\Http\Controllers\FormularioController::class, 'almacenar'])->name('formulario.almacenar');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

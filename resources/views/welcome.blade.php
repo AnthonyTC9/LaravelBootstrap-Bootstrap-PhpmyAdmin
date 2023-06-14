@@ -35,7 +35,7 @@
                                     <img style="height:500px !important;" class="img-fluid w-100 rounded mb-5" src="{{ $proyecto->imagen }}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">{{ $proyecto->descripcion }}</p>
-                                    <a href="{{ $proyecto->url }}" class="btn btn-primary" data-bs-dismiss="modal">
+                                    <a href="{{ $proyecto->url }}" class="btn btn-primary">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Visitar proyecto
                                     </a>
@@ -54,4 +54,5 @@
 
 
 @endsection
+
 

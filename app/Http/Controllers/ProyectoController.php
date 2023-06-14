@@ -40,6 +40,8 @@ class ProyectoController extends Controller
         return view('proyecto.create', compact('proyecto'));
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      *
